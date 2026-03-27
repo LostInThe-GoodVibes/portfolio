@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Jacques+Francois+Shadow&family=Protest+Revolution&family=Lily+Script+One&family=Island+Moments&display=swap');
+
+
+.font-jacques {
+  font-family: 'Jacques Francois Shadow', serif;
+}
+
+.font-protest {
+  font-family: 'Protest Revolution', sans-serif;
+  font-weight: 400;
+}
