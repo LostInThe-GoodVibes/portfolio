@@ -59,18 +59,7 @@ export default function ProcessSection() {
           </h2>
         </motion.div>
 
-        {/* Horizontal Process Flow */}
         <div className="relative">
-          {/* Connecting Line */}
-          <div className="pointer-events-none absolute left-0 right-0 top-[64px] hidden lg:block">
-            <div className="relative mx-auto h-32 max-w-[1143px]">
-              <div className="absolute left-[12.5%] right-[12.5%] top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-[#3b82f6]/30 via-[#06b6d4]/30 via-[#14b8a6]/30 to-[#10b981]/30" />
-              <div className="absolute left-[25%] top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rotate-45 border-r-2 border-t-2 border-[#06b6d4]/35" />
-              <div className="absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rotate-45 border-r-2 border-t-2 border-[#14b8a6]/35" />
-              <div className="absolute left-[75%] top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rotate-45 border-r-2 border-t-2 border-[#10b981]/35" />
-            </div>
-          </div>
-
           {/* Process Steps Grid */}
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
             {steps.map((step, index) => (
@@ -87,7 +76,7 @@ export default function ProcessSection() {
                   {/* Icon & Number */}
                   <div className="mb-8">
                     {/* Icon Circle */}
-                    <div className="mb-6 flex justify-center lg:justify-start">
+                    <div className="mb-6 flex justify-center">
                       {/* Icon Container */}
                       <div 
                         className="flex h-28 w-28 items-center justify-center rounded-[28px] backdrop-blur-sm transition-all duration-300 group-hover:scale-105 sm:h-32 sm:w-32"

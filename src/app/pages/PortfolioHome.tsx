@@ -83,15 +83,15 @@ export default function PortfolioHome() {
               </p>
 
               <div className="mb-8">
-                <h2 className="font-sans text-[42px] font-bold leading-[1.1] text-white sm:text-[60px] sm:leading-[75px]">
+                <h2 className="font-sans text-[36px] font-bold leading-[1.1] text-white sm:text-[60px] sm:leading-[75px]">
                   Hi, I'm{" "}
-                  <span className="font-protest text-[72px] text-[#c94455] sm:text-[100px]">
+                  <span className="font-protest text-[58px] text-[#c94455] sm:text-[100px]">
                     Arjun
                   </span>
                   <span className="text-[20px] sm:text-[25px]"> —</span>
                 </h2>
 
-                <p className="font-jacques text-[52px] leading-[0.95] text-[#0caeff] sm:text-[72px] sm:leading-[0.95] lg:text-[85px] lg:leading-[75px]">
+                <p className="font-jacques text-[40px] leading-[0.98] text-[#0caeff] sm:text-[72px] sm:leading-[0.95] lg:text-[85px] lg:leading-[75px]">
                   Lost In The Good Vibes
                 </p>
               </div>
@@ -418,7 +418,7 @@ function ProjectCard({
 
         <div
           className={`absolute inset-x-0 bottom-0 z-10 ${
-            large ? "p-12" : "p-8"
+            large ? "p-6 sm:p-8 lg:p-12" : "p-6 sm:p-8"
           }`}
         >
           <p className="mb-3 text-[12px] uppercase tracking-[0.6px] text-[#0caeff]">

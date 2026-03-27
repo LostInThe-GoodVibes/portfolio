@@ -9,10 +9,10 @@ interface CaseStudyGalleryProps {
 }
 
 const aspectClasses: Record<NonNullable<GalleryItem["aspect"]>, string> = {
-  portrait: "min-h-[480px] lg:min-h-[620px]",
-  landscape: "min-h-[360px] lg:min-h-[440px]",
-  wide: "min-h-[340px] lg:min-h-[420px]",
-  square: "min-h-[360px] lg:min-h-[420px]",
+  portrait: "min-h-[320px] sm:min-h-[420px] lg:min-h-[620px]",
+  landscape: "min-h-[240px] sm:min-h-[320px] lg:min-h-[440px]",
+  wide: "min-h-[220px] sm:min-h-[300px] lg:min-h-[420px]",
+  square: "min-h-[240px] sm:min-h-[320px] lg:min-h-[420px]",
 };
 
 export default function CaseStudyGallery({
@@ -31,7 +31,7 @@ export default function CaseStudyGallery({
           accent={accent}
           mode={mode}
           className="lg:col-span-4"
-          mediaHeightClassName="min-h-[560px] lg:min-h-[760px]"
+          mediaHeightClassName="min-h-[360px] sm:min-h-[460px] lg:min-h-[760px]"
           imageClassName="object-cover object-top"
         />
         <CaseStudyMediaCard
@@ -39,7 +39,7 @@ export default function CaseStudyGallery({
           accent={accent}
           mode={mode}
           className="lg:col-span-8 self-end"
-          mediaHeightClassName="min-h-[420px] lg:min-h-[560px]"
+          mediaHeightClassName="min-h-[260px] sm:min-h-[340px] lg:min-h-[560px]"
           imageClassName="object-cover object-center"
         />
       </div>
@@ -79,10 +79,10 @@ export default function CaseStudyGallery({
         const mediaHeightClassName =
           mode === "final" && items.length === 3
             ? index === 0
-              ? "min-h-[320px] lg:min-h-[460px]"
+              ? "min-h-[260px] sm:min-h-[320px] lg:min-h-[460px]"
               : index === 1
-                ? "min-h-[320px] lg:min-h-[460px]"
-                : "min-h-[300px] lg:min-h-[360px]"
+                ? "min-h-[260px] sm:min-h-[320px] lg:min-h-[460px]"
+                : "min-h-[220px] sm:min-h-[280px] lg:min-h-[360px]"
             : aspectClasses[item.aspect ?? "portrait"];
 
         return (

@@ -82,7 +82,7 @@ export default function CaseStudyTemplate({
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(12,174,255,0.16),transparent_34%),linear-gradient(180deg,rgba(2,6,24,0.24)_0%,rgba(2,6,24,0.82)_55%,#020618_100%)]" />
         </div>
 
-        <div className="relative mx-auto max-w-[1280px] px-6 pb-20 pt-36 md:px-12">
+        <div className="relative mx-auto max-w-[1280px] px-5 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 md:px-12 md:pt-36">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
@@ -109,10 +109,10 @@ export default function CaseStudyTemplate({
               >
                 {project.subtitle}
               </p>
-              <h1 className="max-w-[10ch] text-balance font-sans text-[44px] font-bold leading-[0.95] tracking-[-0.06em] text-white sm:text-[68px] lg:text-[88px]">
+              <h1 className="max-w-full text-balance font-sans text-[34px] font-bold leading-[0.98] tracking-[-0.05em] text-white sm:max-w-[10ch] sm:text-[56px] lg:text-[88px]">
                 {project.title}
               </h1>
-              <p className="mt-6 max-w-[56ch] text-[18px] leading-[1.9] text-[#cad5e2] sm:text-[21px]">
+              <p className="mt-5 max-w-[56ch] text-[16px] leading-[1.8] text-[#cad5e2] sm:mt-6 sm:text-[18px] lg:text-[21px]">
                 {project.summary}
               </p>
 
@@ -136,7 +136,7 @@ export default function CaseStudyTemplate({
               initial={{ opacity: 0, scale: 0.98, y: 24 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.12 }}
-              className="relative overflow-hidden rounded-[36px] border border-white/10 bg-[rgba(8,15,32,0.72)] p-5 shadow-[0_30px_120px_rgba(0,0,0,0.35)]"
+              className="relative overflow-hidden rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.72)] p-4 shadow-[0_30px_120px_rgba(0,0,0,0.35)] sm:rounded-[36px] sm:p-5"
             >
               <div
                 className="pointer-events-none absolute inset-0 opacity-80"
@@ -144,8 +144,8 @@ export default function CaseStudyTemplate({
                   background: `radial-gradient(circle at top left, ${project.accent}2a, transparent 36%)`,
                 }}
               />
-              <div className="relative min-h-[340px] overflow-hidden rounded-[28px] border border-white/8 bg-[#050b17] sm:min-h-[420px]">
-                <div className="absolute inset-0 flex items-center justify-center p-6 sm:p-8">
+              <div className="relative min-h-[240px] overflow-hidden rounded-[22px] border border-white/8 bg-[#050b17] sm:min-h-[340px] sm:rounded-[28px] lg:min-h-[420px]">
+                <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 lg:p-8">
                   <img
                     src={project.heroImage}
                     alt={project.heroImageAlt}
@@ -191,7 +191,7 @@ export default function CaseStudyTemplate({
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-16 sm:py-20 lg:py-24">
         <div className="mx-auto grid max-w-[1280px] gap-10 px-6 md:px-12 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <CaseStudySectionHeading
@@ -216,7 +216,7 @@ export default function CaseStudyTemplate({
         </div>
       </section>
 
-      <section className="border-y border-white/6 bg-[linear-gradient(180deg,rgba(7,17,36,0.7)_0%,rgba(2,6,24,0)_100%)] py-24">
+      <section className="border-y border-white/6 bg-[linear-gradient(180deg,rgba(7,17,36,0.7)_0%,rgba(2,6,24,0)_100%)] py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <CaseStudySectionHeading
             eyebrow="Problem Space"
@@ -243,7 +243,7 @@ export default function CaseStudyTemplate({
         </div>
       </section>
 
-      <section className="py-24">
+      <section className="py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <CaseStudySectionHeading
             eyebrow="Process"
@@ -310,7 +310,7 @@ export default function CaseStudyTemplate({
         </div>
       </section>
 
-      <section className="border-y border-white/6 bg-[linear-gradient(180deg,rgba(7,17,36,0.72)_0%,rgba(2,6,24,0)_100%)] py-24">
+      <section className="border-y border-white/6 bg-[linear-gradient(180deg,rgba(7,17,36,0.72)_0%,rgba(2,6,24,0)_100%)] py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <CaseStudySectionHeading
             eyebrow="Wireframes"
@@ -366,7 +366,7 @@ export default function CaseStudyTemplate({
                     {stat.label}
                   </p>
                   <p
-                    className="mt-4 max-w-full text-[34px] font-bold leading-[1.05] tracking-[-0.05em] break-words sm:text-[36px]"
+                    className="mt-4 max-w-full break-words text-[28px] font-bold leading-[1.05] tracking-[-0.05em] sm:text-[32px] lg:text-[36px]"
                     style={{ color: project.accent }}
                   >
                     {stat.value}
@@ -375,7 +375,7 @@ export default function CaseStudyTemplate({
               ))}
             </div>
 
-            <div className="rounded-[32px] border border-white/10 bg-[rgba(8,15,32,0.75)] p-8 sm:p-10">
+            <div className="rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.75)] p-6 sm:rounded-[32px] sm:p-8 lg:p-10">
               <div
                 className="mb-6 inline-flex items-center gap-2 rounded-full px-4 py-2 text-[12px] font-medium uppercase tracking-[0.22em]"
                 style={{
@@ -387,7 +387,7 @@ export default function CaseStudyTemplate({
                 <Layers3 className="h-4 w-4" />
                 Reflection
               </div>
-              <p className="max-w-[56ch] text-[19px] leading-[1.9] text-[#cad5e2]">
+              <p className="max-w-[56ch] text-[16px] leading-[1.8] text-[#cad5e2] sm:text-[18px] lg:text-[19px]">
                 {project.takeaway}
               </p>
             </div>
@@ -399,7 +399,7 @@ export default function CaseStudyTemplate({
         <ExploreAppSection project={project} appUrl={project.appUrl} />
       ) : null}
 
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-[1280px] px-6 md:px-12">
           <div className="grid gap-4 md:grid-cols-3">
             {previousProject ? (
@@ -415,12 +415,12 @@ export default function CaseStudyTemplate({
 
             <Link
               to="/#hero"
-              className="flex min-h-[170px] flex-col items-center justify-center rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-8 py-10 text-center transition-transform hover:-translate-y-1"
+              className="flex min-h-[150px] flex-col items-center justify-center rounded-[24px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-5 py-8 text-center transition-transform hover:-translate-y-1 sm:min-h-[170px] sm:rounded-[28px] sm:px-8 sm:py-10"
             >
               <span className="text-[12px] uppercase tracking-[0.22em] text-[#62748e]">
                 Back Home
               </span>
-              <p className="mt-4 text-[28px] font-bold tracking-[-0.04em] text-white">
+              <p className="mt-4 text-[22px] font-bold tracking-[-0.04em] text-white sm:text-[26px] lg:text-[28px]">
                 Explore the Homepage
               </p>
             </Link>
@@ -459,7 +459,7 @@ function GamePitchTemplate({
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,138,71,0.18),transparent_32%),linear-gradient(180deg,rgba(2,6,24,0.2)_0%,rgba(2,6,24,0.8)_55%,#020618_100%)]" />
         </div>
 
-        <div className="relative mx-auto flex min-h-[92vh] max-w-[1400px] flex-col justify-end px-6 pb-20 pt-36 md:px-12">
+        <div className="relative mx-auto flex min-h-[92vh] max-w-[1400px] flex-col justify-end px-5 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 md:px-12 md:pt-36">
           <Link
             to="/#work"
             className="mb-10 inline-flex w-fit items-center gap-2 rounded-full border border-white/10 bg-black/20 px-5 py-2 text-[13px] font-medium uppercase tracking-[0.18em] text-[#cad5e2] backdrop-blur-sm transition-colors hover:text-white"
@@ -475,10 +475,10 @@ function GamePitchTemplate({
             >
               {project.subtitle}
             </p>
-            <h1 className="max-w-[11ch] text-balance font-sans text-[48px] font-bold leading-[0.9] tracking-[-0.06em] text-white sm:text-[78px] lg:text-[108px]">
+            <h1 className="max-w-full text-balance font-sans text-[36px] font-bold leading-[0.95] tracking-[-0.05em] text-white sm:max-w-[11ch] sm:text-[64px] lg:text-[108px]">
               {project.title}
             </h1>
-            <p className="mt-6 max-w-[720px] text-[19px] leading-[1.8] text-[#d8dee9] sm:text-[24px]">
+            <p className="mt-5 max-w-[720px] text-[16px] leading-[1.8] text-[#d8dee9] sm:mt-6 sm:text-[20px] lg:text-[24px]">
               {project.tagline ?? project.summary}
             </p>
 
@@ -633,7 +633,7 @@ function GamePitchTemplate({
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-[1400px] px-6 md:px-12">
           <div className="grid gap-4 md:grid-cols-3">
             {previousProject ? (
@@ -649,12 +649,12 @@ function GamePitchTemplate({
 
             <Link
               to="/#hero"
-              className="flex min-h-[170px] flex-col items-center justify-center rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-8 py-10 text-center transition-transform hover:-translate-y-1"
+              className="flex min-h-[150px] flex-col items-center justify-center rounded-[24px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-5 py-8 text-center transition-transform hover:-translate-y-1 sm:min-h-[170px] sm:rounded-[28px] sm:px-8 sm:py-10"
             >
               <span className="text-[12px] uppercase tracking-[0.22em] text-[#62748e]">
                 Back Home
               </span>
-              <p className="mt-4 text-[28px] font-bold tracking-[-0.04em] text-white">
+              <p className="mt-4 text-[22px] font-bold tracking-[-0.04em] text-white sm:text-[26px] lg:text-[28px]">
                 Explore the Homepage
               </p>
             </Link>
@@ -705,7 +705,7 @@ function SystemProductTemplate({
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(60,200,255,0.16),_transparent_34%),linear-gradient(180deg,rgba(2,6,24,0.24)_0%,rgba(2,6,24,0.82)_55%,#020618_100%)]" />
         </div>
 
-        <div className="relative mx-auto max-w-[1400px] px-6 pb-20 pt-36 md:px-12">
+        <div className="relative mx-auto max-w-[1400px] px-5 pb-16 pt-28 sm:px-6 sm:pb-20 sm:pt-32 md:px-12 md:pt-36">
           <Link
             to="/#work"
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-5 py-2 text-[13px] font-medium uppercase tracking-[0.18em] text-[#90a1b9] transition-colors hover:text-white"
@@ -722,10 +722,10 @@ function SystemProductTemplate({
               >
                 {project.subtitle}
               </p>
-              <h1 className="max-w-[10ch] text-balance font-sans text-[44px] font-bold leading-[0.95] tracking-[-0.06em] text-white sm:text-[68px] lg:text-[88px]">
+              <h1 className="max-w-full text-balance font-sans text-[34px] font-bold leading-[0.98] tracking-[-0.05em] text-white sm:max-w-[10ch] sm:text-[56px] lg:text-[88px]">
                 {project.title}
               </h1>
-              <p className="mt-6 max-w-[58ch] text-[18px] leading-[1.9] text-[#cad5e2] sm:text-[21px]">
+              <p className="mt-5 max-w-[58ch] text-[16px] leading-[1.8] text-[#cad5e2] sm:mt-6 sm:text-[18px] lg:text-[21px]">
                 {project.summary}
               </p>
 
@@ -745,12 +745,12 @@ function SystemProductTemplate({
               </div>
             </div>
 
-            <div className="rounded-[34px] border border-white/10 bg-[rgba(8,15,32,0.78)] p-5">
-              <div className="overflow-hidden rounded-[26px] border border-white/8 bg-[#06101f]">
+            <div className="rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.78)] p-4 sm:rounded-[34px] sm:p-5">
+              <div className="overflow-hidden rounded-[22px] border border-white/8 bg-[#06101f] sm:rounded-[26px]">
                 <img
                   src={project.heroImage}
                   alt={project.heroImageAlt}
-                  className="h-full min-h-[340px] w-full object-contain p-6 sm:min-h-[420px] sm:p-8"
+                  className="h-full min-h-[240px] w-full object-contain p-4 sm:min-h-[340px] sm:p-6 lg:min-h-[420px] lg:p-8"
                 />
               </div>
 
@@ -1016,7 +1016,7 @@ function SystemProductTemplate({
               ))}
             </div>
 
-            <div className="rounded-[32px] border border-white/10 bg-[rgba(8,15,32,0.78)] p-8 sm:p-10">
+            <div className="rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.78)] p-6 sm:rounded-[32px] sm:p-8 lg:p-10">
               <div
                 className="mb-6 inline-flex items-center gap-2 rounded-full px-4 py-2 text-[12px] font-medium uppercase tracking-[0.22em]"
                 style={{
@@ -1028,7 +1028,7 @@ function SystemProductTemplate({
                 <Layers3 className="h-4 w-4" />
                 Reflection
               </div>
-              <p className="max-w-[56ch] text-[19px] leading-[1.9] text-[#cad5e2]">
+              <p className="max-w-[56ch] text-[16px] leading-[1.8] text-[#cad5e2] sm:text-[18px] lg:text-[19px]">
                 {project.takeaway}
               </p>
             </div>
@@ -1044,7 +1044,7 @@ function SystemProductTemplate({
         />
       ) : null}
 
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="mx-auto max-w-[1400px] px-6 md:px-12">
           <div className="grid gap-4 md:grid-cols-3">
             {previousProject ? (
@@ -1060,12 +1060,12 @@ function SystemProductTemplate({
 
             <Link
               to="/#hero"
-              className="flex min-h-[170px] flex-col items-center justify-center rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-8 py-10 text-center transition-transform hover:-translate-y-1"
+              className="flex min-h-[150px] flex-col items-center justify-center rounded-[24px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-5 py-8 text-center transition-transform hover:-translate-y-1 sm:min-h-[170px] sm:rounded-[28px] sm:px-8 sm:py-10"
             >
               <span className="text-[12px] uppercase tracking-[0.22em] text-[#62748e]">
                 Back Home
               </span>
-              <p className="mt-4 text-[28px] font-bold tracking-[-0.04em] text-white">
+              <p className="mt-4 text-[22px] font-bold tracking-[-0.04em] text-white sm:text-[26px] lg:text-[28px]">
                 Explore the Homepage
               </p>
             </Link>
@@ -1145,7 +1145,7 @@ function NarrativeCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55 }}
-      className="rounded-[30px] border p-8 sm:p-10"
+      className="rounded-[24px] border p-6 sm:rounded-[30px] sm:p-8 lg:p-10"
       style={{ backgroundColor: tint, borderColor }}
     >
       <div
@@ -1154,10 +1154,10 @@ function NarrativeCard({
       >
         <div style={{ color: iconColor }}>{icon}</div>
       </div>
-      <h3 className="mt-6 text-[30px] font-bold tracking-[-0.04em] text-white">
+      <h3 className="mt-6 text-[24px] font-bold tracking-[-0.04em] text-white sm:text-[28px] lg:text-[30px]">
         {title}
       </h3>
-      <p className="mt-4 text-[17px] leading-[1.9] text-[#cad5e2]">{body}</p>
+      <p className="mt-4 text-[15px] leading-[1.8] text-[#cad5e2] sm:text-[16px] lg:text-[17px]">{body}</p>
     </motion.article>
   );
 }
@@ -1182,7 +1182,7 @@ function ExploreAppSection({
           href={appUrl}
           target="_blank"
           rel="noreferrer"
-          className="group flex flex-col gap-6 rounded-[32px] border border-white/10 bg-[rgba(8,15,32,0.78)] p-8 transition-transform duration-300 hover:-translate-y-1 sm:p-10 lg:flex-row lg:items-center lg:justify-between"
+          className="group flex flex-col gap-6 rounded-[24px] border border-white/10 bg-[rgba(8,15,32,0.78)] p-6 transition-transform duration-300 hover:-translate-y-1 sm:rounded-[32px] sm:p-8 lg:flex-row lg:items-center lg:justify-between lg:p-10"
         >
           <div className="max-w-[52rem]">
             <p
@@ -1191,17 +1191,17 @@ function ExploreAppSection({
             >
               Live Product
             </p>
-            <h3 className="mt-4 text-[30px] font-bold tracking-[-0.04em] text-white sm:text-[36px]">
+            <h3 className="mt-4 text-[24px] font-bold tracking-[-0.04em] text-white sm:text-[30px] lg:text-[36px]">
               Explore App
             </h3>
-            <p className="mt-3 text-[16px] leading-8 text-[#90a1b9] sm:text-[18px]">
+            <p className="mt-3 text-[15px] leading-7 text-[#90a1b9] sm:text-[16px] lg:text-[18px]">
               Open the live {project.title} experience and explore the actual
               product/software.
             </p>
           </div>
 
           <div
-            className="inline-flex items-center justify-center gap-3 self-start rounded-full px-6 py-3 text-[14px] font-medium text-white transition-transform group-hover:translate-x-1 lg:self-center"
+            className="inline-flex w-full items-center justify-center gap-3 self-start rounded-full px-6 py-3 text-[14px] font-medium text-white transition-transform group-hover:translate-x-1 sm:w-auto lg:self-center"
             style={{
               backgroundColor: project.accent,
               boxShadow: `0 16px 36px -18px ${project.accent}`,
@@ -1230,7 +1230,7 @@ function FooterNavCard({
   return (
     <Link
       to={to}
-      className="group relative overflow-hidden rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-8 py-8 transition-transform hover:-translate-y-1"
+      className="group relative overflow-hidden rounded-[24px] border border-white/10 bg-[rgba(8,15,32,0.72)] px-5 py-6 transition-transform hover:-translate-y-1 sm:rounded-[28px] sm:px-8 sm:py-8"
     >
       <div
         className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -1240,7 +1240,7 @@ function FooterNavCard({
           }, ${project.accent}22, transparent 50%)`,
         }}
       />
-      <div className="relative flex h-full min-h-[170px] flex-col justify-between">
+      <div className="relative flex h-full min-h-[150px] flex-col justify-between sm:min-h-[170px]">
         <div className="flex items-center justify-between gap-4 text-[#90a1b9]">
           <span className="text-[12px] uppercase tracking-[0.22em]">
             {direction}
@@ -1252,10 +1252,10 @@ function FooterNavCard({
           )}
         </div>
         <div>
-          <p className="text-[28px] font-bold tracking-[-0.04em] text-white">
+          <p className="text-[22px] font-bold tracking-[-0.04em] text-white sm:text-[26px] lg:text-[28px]">
             {project.title}
           </p>
-          <p className="mt-3 text-[15px] leading-7 text-[#90a1b9]">
+          <p className="mt-3 text-[14px] leading-6 text-[#90a1b9] sm:text-[15px] sm:leading-7">
             {project.summary}
           </p>
         </div>

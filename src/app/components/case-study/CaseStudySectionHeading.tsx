@@ -23,14 +23,14 @@ export default function CaseStudySectionHeading({
       transition={{ duration: 0.6 }}
       className={centered ? "mx-auto max-w-[760px] text-center" : "max-w-[760px]"}
     >
-      <p className="mb-4 font-sans text-[13px] font-medium uppercase tracking-[2px] text-[#0caeff]">
+      <p className="mb-4 font-sans text-[12px] font-medium uppercase tracking-[2px] text-[#0caeff] sm:text-[13px]">
         {eyebrow}
       </p>
-      <h2 className="text-balance font-sans text-[34px] font-bold leading-[1.05] tracking-[-0.04em] text-white sm:text-[48px] md:text-[56px]">
+      <h2 className="text-balance font-sans text-[28px] font-bold leading-[1.08] tracking-[-0.04em] text-white sm:text-[40px] md:text-[48px] lg:text-[56px]">
         {title}
       </h2>
       {description ? (
-        <p className="mt-6 text-[17px] leading-[1.8] text-[#90a1b9] sm:text-[19px]">
+        <p className="mt-5 text-[15px] leading-[1.8] text-[#90a1b9] sm:mt-6 sm:text-[17px] lg:text-[19px]">
           {description}
         </p>
       ) : null}

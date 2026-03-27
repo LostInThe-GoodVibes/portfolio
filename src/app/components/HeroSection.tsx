@@ -71,18 +71,18 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
             className="max-w-[620px]"
           >
             <div>
-              <p className="[font-family:'Jaini',cursive] text-[56px] leading-[0.95] tracking-[-2.4px] text-white sm:text-[72px] lg:text-[96px]">
+              <p className="[font-family:'Jaini',cursive] text-[44px] leading-[0.95] tracking-[-2.4px] text-white sm:text-[72px] lg:text-[96px]">
                 Designing
               </p>
-              <p className="[font-family:'Jaini',cursive] text-[56px] leading-[0.95] tracking-[-2.4px] text-white sm:text-[72px] lg:text-[96px]">
+              <p className="[font-family:'Jaini',cursive] text-[44px] leading-[0.95] tracking-[-2.4px] text-white sm:text-[72px] lg:text-[96px]">
                 experiences
               </p>
 
               <div className="flex flex-wrap items-baseline gap-x-3">
-                <p className="[font-family:'Jaini',cursive] text-[56px] leading-[0.95] tracking-[-2.4px] text-white sm:text-[72px] lg:text-[96px]">
+                <p className="[font-family:'Jaini',cursive] text-[44px] leading-[0.95] tracking-[-2.4px] text-white sm:text-[72px] lg:text-[96px]">
                   that
                 </p>
-                <p className="font-jacques text-[56px] leading-[0.95] tracking-[-2.4px] text-[#0caeff] sm:text-[72px] lg:text-[96px]">
+                <p className="font-jacques text-[44px] leading-[0.95] tracking-[-2.4px] text-[#0caeff] sm:text-[72px] lg:text-[96px]">
                   Matter
                 </p>
               </div>
@@ -132,9 +132,9 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
                       <p className="font-sans text-[12px] uppercase tracking-[0.6px] text-[#90a1b9]">
                         Featured Project
                       </p>
-                      <p className="mt-2 font-sans text-[22px] font-bold tracking-[-0.03em] text-white">
-                        {activeProject.title}
-                      </p>
+                    <p className="mt-2 font-sans text-[20px] font-bold tracking-[-0.03em] text-white sm:text-[22px]">
+                      {activeProject.title}
+                    </p>
                     </div>
 
                     <div className="relative overflow-hidden rounded-[16px] bg-[#1d293d]">

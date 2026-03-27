@@ -16,7 +16,7 @@ export default function CaseStudyMediaCard({
   mode = "wireframes",
   className = "",
   imageClassName = "",
-  mediaHeightClassName = "min-h-[420px]",
+  mediaHeightClassName = "min-h-[280px] sm:min-h-[360px] lg:min-h-[420px]",
 }: CaseStudyMediaCardProps) {
   return (
     <motion.article
@@ -24,7 +24,7 @@ export default function CaseStudyMediaCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.55 }}
-      className={`overflow-hidden rounded-[28px] border border-white/10 bg-[rgba(8,15,32,0.75)] ${className}`}
+      className={`overflow-hidden rounded-[24px] border border-white/10 bg-[rgba(8,15,32,0.75)] sm:rounded-[28px] ${className}`}
     >
       <div className={`relative overflow-hidden ${mediaHeightClassName}`}>
         <div
@@ -48,8 +48,8 @@ export default function CaseStudyMediaCard({
             />
           </div>
         ) : (
-          <div className="absolute inset-5 rounded-[22px] border border-dashed border-white/12 bg-[rgba(255,255,255,0.02)]">
-            <div className="absolute inset-x-5 top-5 flex items-center justify-between">
+          <div className="absolute inset-4 rounded-[20px] border border-dashed border-white/12 bg-[rgba(255,255,255,0.02)] sm:inset-5 sm:rounded-[22px]">
+            <div className="absolute inset-x-4 top-4 flex items-center justify-between sm:inset-x-5 sm:top-5">
               <span
                 className="rounded-full px-3 py-1 text-[11px] font-medium uppercase tracking-[0.22em]"
                 style={{
@@ -65,10 +65,10 @@ export default function CaseStudyMediaCard({
               </span>
             </div>
 
-            <div className="absolute inset-0 flex items-center justify-center px-8 text-center">
+            <div className="absolute inset-0 flex items-center justify-center px-5 text-center sm:px-8">
               <div>
-                <p className="text-[18px] font-semibold text-white">{item.title}</p>
-                <p className="mt-3 text-[14px] leading-7 text-[#90a1b9]">
+                <p className="text-[16px] font-semibold text-white sm:text-[18px]">{item.title}</p>
+                <p className="mt-3 text-[13px] leading-6 text-[#90a1b9] sm:text-[14px] sm:leading-7">
                   {item.caption}
                 </p>
               </div>
@@ -77,13 +77,13 @@ export default function CaseStudyMediaCard({
         )}
       </div>
 
-      <div className="border-t border-white/8 px-6 py-5">
-        <div className="flex items-start justify-between gap-4">
+      <div className="border-t border-white/8 px-4 py-4 sm:px-6 sm:py-5">
+        <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:gap-4">
           <div>
-            <h3 className="text-[20px] font-semibold tracking-[-0.03em] text-white">
+            <h3 className="text-[18px] font-semibold tracking-[-0.03em] text-white sm:text-[20px]">
               {item.title}
             </h3>
-            <p className="mt-2 max-w-[52ch] text-[14px] leading-7 text-[#90a1b9]">
+            <p className="mt-2 max-w-[52ch] text-[13px] leading-6 text-[#90a1b9] sm:text-[14px] sm:leading-7">
               {item.caption}
             </p>
           </div>
