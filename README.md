@@ -1,7 +1,7 @@
 
-  # Enhance Projects Section Interactions
+  # Arjun manoj (lostintheGoodVibes)
 
-  This is a code bundle for Enhance Projects Section Interactions. The original project is available at https://www.figma.com/design/tgxKyvnZgFF3DzYoZ7IhYD/Enhance-Projects-Section-Interactions.
+  . The original project is available at https://www.figma.com/design/Arjun-prtfolio.
 
   ## Running the code
 
